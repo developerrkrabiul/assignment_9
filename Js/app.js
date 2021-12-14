@@ -1,9 +1,7 @@
 
 
 
-function MainCal(){
-
-    this.studentdata = [
+    const student = [
         {
             roll        : 01,
             name        : 'Rk',
@@ -32,7 +30,7 @@ function MainCal(){
             s           : 55
         },
      ];
-     this.phoneBook = [
+     const phoneBook = [
         {
             name        : 'Rk Rabiul Islam (Razu)',
             Number      :  1626761798,
@@ -86,7 +84,7 @@ function MainCal(){
             relation    : 'Kota bole beshi'
         }
     ];
-    this.deves = [
+    const deves = [
 
         {
             id          : 01,
@@ -131,8 +129,14 @@ function MainCal(){
             salary      : 600
         },
     ];
-};
 
-let data = new MainCal();
+    let data = JSON.stringify(student);
+    let data2 = JSON.stringify(phoneBook);
+    let data3 = JSON.stringify(deves);
 
-console.log(JSON.stringify(data));
+console.log(`
+
+    Student Data    = ${data}
+    Phone Book      = ${data2}
+    Deves Data    = ${data3}
+`);
