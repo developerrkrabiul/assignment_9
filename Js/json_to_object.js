@@ -10,12 +10,6 @@ let stuData = JSON.parse(student);
 let phonData = JSON.parse(phoneBook);
 let devesData = JSON.parse(deves);
 
-console.log(`
-
-    Student Data    = ${stuData}
-    ==========================================
-    Phone Book      = ${phonData}
-    ==========================================
-    Deves Data    = ${devesData}
-    ==========================================
-`);
+console.log(stuData);
+console.log(phonData);
+console.log(devesData);
